@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_space"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblID"
+        android:layout_marginTop="@dimen/layout_space"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/inputID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblID"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@id/lblID"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblPassword"
+        android:layout_alignLeft="@id/inputID"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="text|textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPassword"
+        android:layout_marginTop="@dimen/layout_space"
+        android:onClick="login"
+        android:text="LOGIN" />
+</RelativeLayout>
