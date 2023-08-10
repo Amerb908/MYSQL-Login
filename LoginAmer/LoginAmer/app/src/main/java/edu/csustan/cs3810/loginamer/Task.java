@@ -15,7 +15,7 @@ public class Task extends AsyncTask<String, Void, Integer> {
     private Context main;
     private AlertDialog dialog;
     private static final String PROTOCOL = "http://";
-    private static final String IP = "35.233.134.106";
+    private static final String IP = "00.000.000.000";
     private static final String FILE_NAME = "login.php";
     private static final String HTTP_POST_METHOD = "POST";
     private static final int CONNECTION_ERROR = -1;
